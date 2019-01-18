@@ -1,5 +1,21 @@
 ﻿' Copyright (C) 2018, CERT Gouvernemental (GOVCERT.LU) '
-' Author: Jean-Paul Weber <jean-paul.weber@govcertt.etat.lu> '
+' Author: Jean-Paul Weber <jean-paul.weber@govcert.etat.lu> '
+
+'This file is part of GC-Notify.'
+''
+'GC-Notify is free software: you can redistribute it and/or modify'
+'it under the terms of the GNU General Public License as published by'
+'the Free Software Foundation, either version 3 of the License, or'
+'(at your option) any later version.'
+''
+'GC-Notify is distributed in the hope that it will be useful,'
+'but WITHOUT ANY WARRANTY; without even the implied warranty of'
+'MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the'
+'GNU General Public License for more details.'
+''
+'You should have received a copy of the GNU General Public License'
+'along with GC-Notify.  If not, see <https://www.gnu.org/licenses/>.'
+'
 
 Public Class ThisAddIn
 
