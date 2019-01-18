@@ -1,0 +1,11 @@
+The email from: 
+
+{{emailAddress}}
+
+with the subject
+
+{{emailSubject}}
+
+was already detected as SPAM.
+
+Do you realy want to send this email to GOVCERT?
