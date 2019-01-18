@@ -18,10 +18,25 @@ is so that one can add comments and guarantee a certain transparency.
 The code is adapted to our environment and therefore has set the destination email to soc@govcert.etat.lu and there are several GOVCERT.LU references visible to
 the user.
 
-The VSTO is tested from Outlook 2013 upwards, but might work on 2010.
+The VSTO is tested with Outlook 2013, 2016 and 2019.
 
 # Requirements
 Visual Studio 2019 to compile the code
+
+
+# Compile
+MSBuild should be in the PATH variable of Windows, if not it is located here:
+
+> C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin
+
+Go to the folder of the downloaded code and execute
+
+> cd "GOVCERT Outlook Addins"
+> msbuild "GOVCERT Outlook Addins.vbproj" /t:Publish /p:PublishDir="publish/" /p:Configuration=Release
+
+Then the copliled version OneClick Solution should be then found in:
+
+> GOVCERT Outlook Addins\publish
 
 # Adaptations
 
@@ -50,6 +65,8 @@ Then the solution has to be published and distributed.
 The solution can be complied via Visual Studio's OneClick Solution, and then distributed.
 
 # LICENSE
+
+Copyright (C) 2018, CERT Gouvernemental (GOVCERT.LU)
 
 GC-Notify is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
