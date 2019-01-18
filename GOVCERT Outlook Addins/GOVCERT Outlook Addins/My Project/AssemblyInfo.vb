@@ -9,11 +9,11 @@ Imports System.Security
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("GOVCERT Outlook Addins")>
-<Assembly: AssemblyDescription("GOVCERT Support Tools")>
+<Assembly: AssemblyTitle("GOVCERT.LU Outlook Addins")>
+<Assembly: AssemblyDescription("GOVCERT.LU Support Tools")>
 <Assembly: AssemblyCompany("CERT Gouvernemental Luxembourg")>
-<Assembly: AssemblyProduct("GOVCERT Outlook Addins")> 
-<Assembly: AssemblyCopyright("Copyright ©  2018")> 
+<Assembly: AssemblyProduct("GOVCERT.LU Outlook Addins")>
+<Assembly: AssemblyCopyright("Copyright (C) 2018, CERT Gouvernemental (GOVCERT.LU)")>
 <Assembly: AssemblyTrademark("")>
 
 ' Setting ComVisible to false makes the types in this assembly not visible 

@@ -3,8 +3,8 @@
     <ribbon>
         <tabs>
             <tab idMso="TabNewMailMessage">
-                <group id="Group1" label="Govcert Tools">
-                    <button id="Button1" screentip="Reports the mail to GovCERT and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
+                <group id="Group1" label="GOVCERT.LU Tools">
+                    <button id="Button1" screentip="Reports the mail to GOVCERT.LU and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
                 </group>
             </tab>
         </tabs>

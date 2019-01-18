@@ -278,7 +278,9 @@
     <EmbeddedResource Include="RibbonNewMail.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="RibbonReadMail.xml" />
+    <EmbeddedResource Include="RibbonReadMail.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -294,13 +296,13 @@
     <OptionStrict>On</OptionStrict>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>cert_gouvernemental_govcert_lu.pfx</ManifestKeyFile>
+    <ManifestKeyFile>GOVCERT Outlook Addins_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>ADDE6790537CB8D2BD8E5DE46A4FD464EC8EE7F1</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>D2D183FE89A757C90C0591D9C428471D1054336A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a Visual Basic project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

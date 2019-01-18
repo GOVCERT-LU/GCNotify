@@ -1,4 +1,4 @@
-﻿' CERT Gouvernemental (GOVCERT.LU) (c) 2017-present <info@govcert.etat.lu>'
+﻿' Copyright (C) 2018, CERT Gouvernemental (GOVCERT.LU) '
 ' Author: Jean-Paul Weber <jean-paul.weber@govcertt.etat.lu> '
 
 Public Class ThisAddIn

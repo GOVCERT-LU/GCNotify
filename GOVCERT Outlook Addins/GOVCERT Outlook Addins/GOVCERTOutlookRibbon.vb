@@ -1,4 +1,4 @@
-﻿' CERT Gouvernemental (GOVCERT.LU) (c) 2017-present <info@govcert.etat.lu>'
+﻿' Copyright (C) 2018, CERT Gouvernemental (GOVCERT.LU) '
 ' Author: Jean-Paul Weber <jean-paul.weber@govcertt.etat.lu> '
 
 Imports Microsoft.Office.Core
@@ -96,7 +96,7 @@ Public Class GOVCERTOutlookRibbon
         Else
             If mail.Subject.StartsWith(My.Resources.Tag) Then
                 ' Show dialog an do nothing '
-                System.Windows.Forms.MessageBox.Show(My.Resources.NewResendError, "ERROR - GOVCERT Addins", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information)
+                System.Windows.Forms.MessageBox.Show(My.Resources.NewResendError, "ERROR - GOVCERT.LU Addins", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information)
                 Return Nothing
             Else
                 If String.IsNullOrEmpty(mail.Body) Then
@@ -140,7 +140,7 @@ Public Class GOVCERTOutlookRibbon
                     Try
                         mail.PropertyAccessor.GetProperty(PS_PUBLIC_STRINGS + "/X-GC-Notify-Version")
                         ' Show dialog an do nothing '
-                        System.Windows.Forms.MessageBox.Show(My.Resources.ResendError, "ERROR - GOVCERT Addins", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information)
+                        System.Windows.Forms.MessageBox.Show(My.Resources.ResendError, "ERROR - GOVCERT.LU Addins", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information)
                         Return
                     Catch ex As System.Runtime.InteropServices.COMException
                         If outGoingMail Is Nothing Then
@@ -172,7 +172,7 @@ Public Class GOVCERTOutlookRibbon
                 Next
 
             Catch ex As System.Runtime.InteropServices.COMException
-                System.Windows.Forms.MessageBox.Show(My.Resources.NoSelectionError, "ERROR - GOVCERT Addins", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error)
+                System.Windows.Forms.MessageBox.Show(My.Resources.NoSelectionError, "ERROR - GOVCERT.LU Addins", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error)
                 Return
 
             End Try
@@ -191,7 +191,7 @@ Public Class GOVCERTOutlookRibbon
                 End If
                 outGoingMail.Display()
             Else
-                System.Windows.Forms.MessageBox.Show("No Email(s) selected", "ERROR - GOVCERT Addins", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Exclamation)
+                System.Windows.Forms.MessageBox.Show("No Email(s) selected", "ERROR - GOVCERT.LU Addins", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Exclamation)
                 Return
             End If
         End If

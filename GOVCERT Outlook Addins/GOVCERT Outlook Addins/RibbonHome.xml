@@ -3,13 +3,13 @@
   <ribbon>
     <tabs>
       <tab idMso="TabMail">
-        <group id="Group1" label="Govcert Tools">
-          <button id="Button1" screentip="Reports the mail to GovCERT and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
+        <group id="Group1" label="GOVCERT.LU Tools">
+          <button id="Button1" screentip="Reports the mail to GOVCERT.LU and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
         </group>
       </tab>
       <tab idMso="TabSendReceive">
-        <group id="Group2" label="Govcert Tools">
-          <button id="Button2" screentip="Reports the mail to GovCERT and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
+        <group id="Group2" label="GOVCERT.LU Tools">
+          <button id="Button2" screentip="Reports the mail to GOVCERT.LU and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
         </group>
       </tab>
     </tabs>
