@@ -1,0 +1,9 @@
+Dear GOVCERT,
+
+I want to forward the following emails to be analysed, as I found they look souspicious.
+
+Attachment(s):
+{{attachments}}
+
+With best regards,
+

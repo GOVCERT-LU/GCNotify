@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui" loadImage="GetImage">
+    <ribbon>
+        <tabs>
+            <tab idMso="TabReadMessage">
+                <group id="Group1" label="Govcert Tools">
+                    <button id="Button1" screentip="Reports the mail to GovCERT and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>
