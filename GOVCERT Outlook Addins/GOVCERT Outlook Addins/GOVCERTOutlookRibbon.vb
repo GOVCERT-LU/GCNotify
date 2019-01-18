@@ -1,4 +1,4 @@
-﻿' Copyright (C) 2018, CERT Gouvernemental (GOVCERT.LU) '
+﻿' CERT Gouvernemental (GOVCERT.LU) (c) 2017-present <info@govcert.etat.lu>'
 ' Author: Jean-Paul Weber <jean-paul.weber@govcertt.etat.lu> '
 
 Imports Microsoft.Office.Core
