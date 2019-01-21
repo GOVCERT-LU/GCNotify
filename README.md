@@ -1,4 +1,4 @@
-# Outlook Add-in: GCNotify
+# Outlook Add-in: GC-Notify
 
 The GOVCERT.LU Outlook Add-in allows users to forward messages as attachment to a predefined email address. The aim of the Add-in is to eliminate user errors when submitting suspicious emails and maintaining the format wished by the receiving analysts.
 
@@ -70,15 +70,15 @@ The solution can be complied via Visual Studio's OneClick Solution, and then dis
 
 Copyright (C) 2018, CERT Gouvernemental (GOVCERT.LU)
 
-GCNotify is free software: you can redistribute it and/or modify
+GC-Notify is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-GCNotify is distributed in the hope that it will be useful,
+GC-Notify is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with GCNotify.  If not, see <https://www.gnu.org/licenses/>.
+along with GC-Notify.  If not, see <https://www.gnu.org/licenses/>.
