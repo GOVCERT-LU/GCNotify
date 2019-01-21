@@ -1,69 +1,67 @@
-# Outlook AddIn: GCNotify
+# Outlook Add-in: GCNotify
 
-Outlook AddIn that creates an Forward as attachment email. This is to ease the work for analyists and users
-so that all the information is send whithout hassels.
+The GOVCERT.LU Outlook Add-in allows users to forward messages as attachment to a predefined email address. The aim of the Add-in is to eliminate user errors when submitting suspicious emails and maintaining the format wished by the receiving analysts.
 
-The Addin will create a Icon in the following ribbons in Outlook
+The Add-in will provide an icon in the following Outlook ribbons:
 
-* Home
-* NewMail
-* ReadMail
+  * Home
+  * NewMail
+  * ReadMail
 
 ![Alt text](/images/outlook_inbox_mod.png?raw=true "Ribbon")
 
-The user has only to select an email from and when selecting the button it creates an email with the selected one attached.
-The Fields TO,Body and Subject will be filled automatically. The user sees the newly created email and has to send it manually. This
-is so that one can add comments and guarantee a certain transparency.
+Users who wish to send a suspicious email for analysis will need to select one or more emails that they would like to submit and click the Add-in button in the Outlook ribbon.
+The Add-in will open a New Email dialog with its TO, Body and Subject fields pre-filled and the previously selected email(s) attached.
+This newly generated email will have to be submitted by the user manually by clicking on the send button, after, if the user wishes to, adding a comment in the body part of the email.
 
-The code is adapted to our environment and therefore has set the destination email to soc@govcert.etat.lu and there are several GOVCERT.LU references visible to
-the user.
+The code of this Add-in has been written in order to meet the requirements of our environment.
+The destination address is therefore set to `soc[AT]govcert.etat.lu` and there are several GOVCERT.LU references visible to the user.
 
-The VSTO is tested with Outlook 2013, 2016 and 2019.
+The [VSTO](https://en.wikipedia.org/wiki/Visual_Studio_Tools_for_Office) has been tested with Outlook 2013, 2016 and 2019.
 
 # Requirements
-Visual Studio 2019 to compile the code
-
+ * Visual Studio 2019 to compile the code
 
 # Compile
-MSBuild should be in the PATH variable of Windows, if not it is located here:
+`MSBuild` should be in the `PATH` variable of Windows, if not it is located here:
 
 ```
 > C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin
 ```
-Go to the folder of the downloaded code and execute:
+co to the folder of the downloaded code and execute:
 ```
 > cd "GOVCERT Outlook Addins"
 ```
-And run:
+then run:
 ```
 > msbuild "GOVCERT Outlook Addins.vbproj" /t:Publish /p:PublishDir="publish/" /p:Configuration=Release
 ```
-Then the copliled version OneClick Solution should be then found in:
 
+The copiled OneClick Solution version should be then found in:
+
+```
 > GOVCERT Outlook Addins\publish
+```
 
 # Adaptations
 
-The GOVCERT.LU references can be changed via the solution's Properties in
-Visual Studio. The following list shows the different locations in the
-properties:
+All GOVCERT.LU references can be modified via the solution's properties in
+Visual Studio. You can find these in different locations in the properties:
 
 * Application
 * Application > Assembly Information
 * Resources (Strings, Icons, Files)
 
-However the labels/screen tips of the ribbon group and button have to be
+However all labels and screen tips, of both the ribbon group and the button, have to be
 changed in the following XML files:
 
 * RibbonHome.xml
 * RibbonNewMail.xml
 * RibbonReadMail.xml
 
-The solution, by default, is not signed but it is suggested to add one known to the destined workstations to automate the installation process, else
-the user has to click on install manually to accept it. 
+The solution is not signed by default, but we suggest to sign the solution before deployment to automate the installation process, otherwise every user will have to accept to manually install it on their workstation.
 
-
-Then the solution has to be published and distributed.
+Lastly the solution has to be published and distributed through your deployment process.
 
 # Publication
 The solution can be complied via Visual Studio's OneClick Solution, and then distributed.
@@ -72,15 +70,15 @@ The solution can be complied via Visual Studio's OneClick Solution, and then dis
 
 Copyright (C) 2018, CERT Gouvernemental (GOVCERT.LU)
 
-GC-Notify is free software: you can redistribute it and/or modify
+GCNotify is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-GC-Notify is distributed in the hope that it will be useful,
+GCNotify is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with GC-Notify.  If not, see <https://www.gnu.org/licenses/>.
+along with GCNotify.  If not, see <https://www.gnu.org/licenses/>.
