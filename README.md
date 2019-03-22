@@ -3,22 +3,20 @@
 <img src="/images/GOVCERT_RGB_for_outlook.png?raw=true"  width="200" height="200">
 
 # Index
-- [GCNotify](#outlook-addin-gcnotify)
+- [GCNotify](#outlook-add-in-gcnotify)
   - [Functionalities](#functionalities)
   - [Features](#features)
-  - [Add-in Button Locations](#addin-button-locations)
+  - [Add-in Button Locations](#add-in-button-locations)
   - [Example Email](#example-email)
-- [Developpment](#developpment)
+- [Development](#development)
   - [Requirements](#requirements)
   - [Customisations](#customisations)
-    - [Templates](#templates)
+    - [Templates/Icon](#templatesicon)
     - [Settings](#settings)
-    - [Resources](#resources)
   - [Building](#building)
-    - [Compile](#compile)
-    - [Publication](#publication)
+    - [Distribution](#distribution)
+- [Contribute](#contribute)
 - [LICENSE](#license)
-- [Contribute](#Contribute)
   
 # Outlook Add-in: GCNotify
 
