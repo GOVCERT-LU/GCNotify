@@ -27,13 +27,17 @@ Visual Studio 2019 to compile the code
 # Compile
 MSBuild should be in the PATH variable of Windows, if not it is located here:
 
+```
 > C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin
-
-Go to the folder of the downloaded code and execute
-
+```
+Go to the folder of the downloaded code and execute:
+```
 > cd "GOVCERT Outlook Addins"
+```
+And run:
+```
 > msbuild "GOVCERT Outlook Addins.vbproj" /t:Publish /p:PublishDir="publish/" /p:Configuration=Release
-
+```
 Then the copliled version OneClick Solution should be then found in:
 
 > GOVCERT Outlook Addins\publish

@@ -1,26 +1,5 @@
 *.pfx
-Govcert Outlook Addins/GovcertOutlookAddins/bin/Debug/*
-Govcert Outlook Addins/GovcertOutlookAddins/obj/Debug/*
-Govcert Outlook Addins/GovcertOutlookAddins/bin/Release/*
-Govcert Outlook Addins/GovcertOutlookAddins/obj/Release/*
-Govcert Outlook Addins/Govcert Outlook Addins Installer/Debug/*
-Govcert Outlook Addins/Govcert Outlook Addins Remover/bin/Debug/*
-Govcert Outlook Addins/Govcert Outlook Addins Remover/bin/Release/*
-Govcert Outlook Addins/Govcert Outlook Addins Remover/obj/Debug/*
-Govcert Outlook Addins/Govcert Outlook Addins Remover/obj/Release/*
-Govcert Outlook Addins/GovcertOutlookAddins/obj/Debug/*
-Govcert Outlook Addins/GovcertOutlookAddins/obj/Release/*
-Govcert Outlook Addins/GovcertOutlookAddins/Ribbon1.resx
-Govcert Outlook Addins/deploy/
-Govcert Outlook Addins/Govcert Outlook Addins Remover/publish/*
-Govcert Outlook Addins/Govcert VSTO Cert Installer/bin/*
-Govcert Outlook Addins/Govcert VSTO Cert Installer/obj/*
-Govcert Outlook Addins/Govcert Outlook Addins Nutshell/bin/Debug/*
-Govcert Outlook Addins/Govcert Outlook Addins Nutshell/bin/Release/*
-Govcert Outlook Addins/Govcert Outlook Addins Nutshell/obj/Debug/*
-Govcert Outlook Addins/Govcert Outlook Addins Nutshell/obj/Release/*
-Govcert Outlook Addins/Govcert Outlook Addins Nutshell/Form1.Designer.cs
-Govcert Outlook Addins/Govcert Outlook Addins Nutshell/Form1.cs
-Govcert Outlook Addins/.vs/*
-
-
+GOVCERT Outlook Addins/.vs/*
+GOVCERT Outlook Addins/GOVCERT Outlook Addins/bin/*
+GOVCERT Outlook Addins/GOVCERT Outlook Addins/obj/*
+GOVCERT Outlook Addins/GOVCERT Outlook Addins/publish/*

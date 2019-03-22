@@ -1,15 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui" loadImage="GetImage">
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
   <ribbon>
     <tabs>
       <tab idMso="TabMail">
-        <group id="Group1" label="GOVCERT.LU Tools">
-          <button id="Button1" screentip="Reports the mail to GOVCERT.LU and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
+        <group id="Group1" getLabel="GetGroupLabel">
+          <button id="BTNMailTab" 
+                  getLabel="GetButtonLabel" 
+                  getSupertip="GetSupertipLabel"
+                  size="large" 
+                  getImage="GetImage" 
+                  onAction="BTNclick"/>
         </group>
       </tab>
       <tab idMso="TabSendReceive">
-        <group id="Group2" label="GOVCERT.LU Tools">
-          <button id="Button2" screentip="Reports the mail to GOVCERT.LU and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
+        <group id="Group2" getLabel="GetGroupLabel">
+          <button id="BTNSendReceiveTab"
+                  getLabel="GetButtonLabel" 
+                  getSupertip="GetSupertipLabel"
+                  size="large"
+                  getImage="GetImage"
+                  onAction="BTNclick"/>
         </group>
       </tab>
     </tabs>

@@ -1,7 +1,42 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" UseMySettingsClassName="true">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="SOC_MAIL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GOVCERT.LU SOC &lt;soc@govcert.etat.lu&gt;</Value>
+    </Setting>
+    <Setting Name="SOC_MAIL_CC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SOC_MAIL_BCC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SUPPORT_MAIL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GOVCERT.LU SUPPORT &lt;support@govcert.etat.lu&gt;</Value>
+    </Setting>
+    <Setting Name="GROUP_LABEL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GOVCERT.LU Tools</Value>
+    </Setting>
+    <Setting Name="SUPERTIP_LABEL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Reports the mail to GOVCERT.LU and requests an analysis</Value>
+    </Setting>
+    <Setting Name="BTN_LABEL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Report Mail</Value>
+    </Setting>
+    <Setting Name="INTERESTING_HEADER_FIELDS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Received,Return-Path,X-PMX-Spam,Authentication-Results,Received-SPF,X-Sender,User-Agent,X-Sender,X-Authenticated-Sender,From</Value>
+    </Setting>
+    <Setting Name="EXCLUDED_HEADER_DOMAIN" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">etat.lu</Value>
+    </Setting>
+    <Setting Name="SOC_MAIL_SUBJECT_TAG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[GC-OBT]</Value>
+    </Setting>
+    <Setting Name="SOC_NEW_MAIL_Subject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SOC Request</Value>
+    </Setting>
+    <Setting Name="SPAM_TAG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SPAM</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

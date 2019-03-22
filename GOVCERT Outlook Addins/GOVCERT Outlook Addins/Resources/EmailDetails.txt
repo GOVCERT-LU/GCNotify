@@ -1,0 +1,8 @@
+
+----------------------Email {{EmailCounter}} - DETAILS --------------------------
+<{{From}}> [{{Subject}}]
+Header Information:
+{{HeaderDetails}}
+
+Number Of Attachments
+{{AttachmentCount}}

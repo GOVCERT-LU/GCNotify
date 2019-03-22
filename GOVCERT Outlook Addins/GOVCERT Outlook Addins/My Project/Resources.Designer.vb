@@ -61,27 +61,63 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''  Looks up a localized string similar to 1.5.0.
         '''</summary>
-        Friend ReadOnly Property gcnotify() As System.Drawing.Icon
+        Friend ReadOnly Property BTN_VERSIION() As String
             Get
-                Dim obj As Object = ResourceManager.GetObject("gcnotify", resourceCulture)
-                Return CType(obj,System.Drawing.Icon)
+                Return ResourceManager.GetString("BTN_VERSIION", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''----------------------Email {{EmailCounter}} - DETAILS --------------------------
+        '''&lt;{{From}}&gt; [{{Subject}}]
+        '''Header Information:
+        '''{{HeaderDetails}}
+        '''
+        '''Number Of Attachments
+        '''{{AttachmentCount}}
+        '''.
+        '''</summary>
+        Friend ReadOnly Property EmailDetails() As String
+            Get
+                Return ResourceManager.GetString("EmailDetails", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to An unexpected Error occured in GCNotify!
+        '''
+        '''Please send this email.
+        '''
+        '''Stacktrace
+        '''----------
+        '''{{Stacktrace}}.
+        '''</summary>
+        Friend ReadOnly Property ErrorMail() As String
+            Get
+                Return ResourceManager.GetString("ErrorMail", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property GOVCERT_RGB_for_outlook_48_48() As System.Drawing.Bitmap
+        Friend ReadOnly Property logo() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("GOVCERT_RGB_for_outlook_48_48", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("logo", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to [Please add your inquiry here].
+        '''  Looks up a localized string similar to [Please add your inquiry here]
+        '''
+        '''HostDetails
+        '''{{HostDetails}}
+        '''{{NetworkDetails}}
+        '''.
         '''</summary>
         Friend ReadOnly Property NewMailBody() As String
             Get
@@ -99,15 +135,6 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to SOC Request.
-        '''</summary>
-        Friend ReadOnly Property NewSubject() As String
-            Get
-                Return ResourceManager.GetString("NewSubject", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Looks up a localized string similar to Please Select at least one email to send..
         '''</summary>
         Friend ReadOnly Property NoSelectionError() As String
@@ -119,7 +146,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to You have entered a text in this Mail.
         '''
-        ''' By accepting your message will be alterd..
+        '''By accepting your message will be alterd..
         '''</summary>
         Friend ReadOnly Property OverWriteConfirm() As String
             Get
@@ -137,15 +164,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to The email from: 
-        '''
-        '''{{emailAddress}}
-        '''
-        '''with the subject
-        '''
-        '''{{emailSubject}}
-        '''
-        '''was already detected as SPAM.
+        '''  Looks up a localized string similar to The email from: {{Email}} with the subject {{Subject}} was already detected as SPAM.
         '''
         '''Do you realy want to send this email to GOVCERT?.
         '''</summary>
@@ -163,6 +182,10 @@ Namespace My.Resources
         '''Attachment(s):
         '''{{attachments}}
         '''
+        '''HostDetails
+        '''{{HostDetails}}
+        '''{{NetworkDetails}}
+        '''
         '''With best regards,
         '''
         '''.
@@ -170,42 +193,6 @@ Namespace My.Resources
         Friend ReadOnly Property SuspectBody() As String
             Get
                 Return ResourceManager.GetString("SuspectBody", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to [SUSPECT].
-        '''</summary>
-        Friend ReadOnly Property SuspectTag() As String
-            Get
-                Return ResourceManager.GetString("SuspectTag", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to [GC-OBT].
-        '''</summary>
-        Friend ReadOnly Property Tag() As String
-            Get
-                Return ResourceManager.GetString("Tag", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to soc@govcert.etat.lu.
-        '''</summary>
-        Friend ReadOnly Property These() As String
-            Get
-                Return ResourceManager.GetString("These", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to 1.4.0.
-        '''</summary>
-        Friend ReadOnly Property Version() As String
-            Get
-                Return ResourceManager.GetString("Version", resourceCulture)
             End Get
         End Property
     End Module
