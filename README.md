@@ -1,4 +1,7 @@
 [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+
+![Alt text](/images/GOVCERT_RGB_for_outlook.png?raw=true "Ribbon" =200px)
+
 # Index
 - [GCNotify](#outlook-addin-gcnotify)
   - [Functionalities](#functionalities)
