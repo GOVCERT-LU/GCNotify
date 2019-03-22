@@ -1,11 +1,13 @@
 [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-![Alt text](/images/GOVCERT_RGB_for_outlook.png?raw=true "Ribbon" =200px)
+<img src="/images/GOVCERT_RGB_for_outlook.png?raw=true"  width="200" height="200">
 
 # Index
 - [GCNotify](#outlook-addin-gcnotify)
   - [Functionalities](#functionalities)
+  - [Features](#features)
   - [Addin Button Locations](#addin-button-locations)
+  - [Example Email](#example-email)
 - [Developpment](#developpment)
   - [Requirements](#requirements)
   - [Customizations](#customizations)
@@ -44,7 +46,10 @@ The destinations and subject of this new email will also be set as specified in 
 
 For transpaency purposes the email is not sent automatically. This enables the user to add additional comments to it and also shows what will be send to the security team.
 
-
+## Features
+* Easy to use
+* Sends one or multiple emails as attachment
+* Customizable
 
 ## Addin Button Locations
 The Addin will create icons in the following ribbons in Outlook
@@ -56,6 +61,8 @@ The Addin will create icons in the following ribbons in Outlook
 
 ![Alt text](/images/outlook_inbox_mod.png?raw=true "Ribbon")
 
+## Example Email
+<img src="/images/Outlook_mail.png?raw=true"  width="250" height="250">
 
 # Developpment
 The code is written in Visual Basic
@@ -136,7 +143,7 @@ It also can be greated via the Visual Studio's internal publication functionalit
 ### Disribution
 The compiled solution can be disrtibuted via the OneClick Solution or manually.
 
-#Contribute
+# Contribute
 
 Please do contribute! Issues and pull requests are welcome. 
 
