@@ -1,14 +1,14 @@
 [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-- [GCNotify](#Outlook-AddIn-GCNotify)
-  - [Functionalities](#Functionalities)
+- [GCNotify](#outlook-addin-gcnotify)
+  - [Functionalities](#functionalities)
   - [Addin Button Locations](#Addin-Button-Locations)
 - [Developpment](#Developpment)
   - [Requirements](#Requirements)
   - [Customizations](#Customizations)
   - [Building](#Building)
   - [Publication](#Publication)
-- [LICENSE](#LICENSE)
+- [LICENSE](#license)
 - [Contribute](#Contribute)
   
 # Outlook AddIn: GCNotify
