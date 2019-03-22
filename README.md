@@ -1,29 +1,69 @@
+[![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+
+- [GCNotify](#Outlook AddIn: GCNotify)
+  - [Functionalities](#Functionalities)
+  - [Addin Button Locations](#Addin Button Locations)
+- [Developpment](#Developpment)
+  - [Requirements](#Requirements)
+  - [Customizations](#Customizations)
+  - [Building](#Building)
+  - [Publication](#Publication)
+- [LICENSE](#LICENSE)
+- [Contribute](#Contribute)
+  
 # Outlook AddIn: GCNotify
 
-Outlook AddIn that creates an Forward as attachment email. This is to ease the work for analyists and users
-so that all the information is send whithout hassels.
+GCNotify is an Outlook AddIn to facilitate the forwarding of suspicious emails to the security team.
 
-The Addin will create a Icon in the following ribbons in Outlook
+It creates a new email with the selected or viewed email as attachment with additional informations (e.g. SMTP Header elements). This is to ease the work for analyists and users:
+
+* For the end user:
+  * does not need to create a new email and forward the suspicious email as attachment (Normally this takes several steps).
+  * sends it to the right contacts
+* For the analyists:
+  * does not need to request original mail if it was forwarded without the option "Forward as attachment"
+  * adds aditional preprocessed data
+
+This ease of use for the enduser will provide the security team also a greater overview of some threats as the user is more likely to report suspicious emails.
+
+The VSTO is works with Outlook 2013, 2016 and 2019.
+
+
+
+
+## Functionalities
+The user has only to select one or more emails from the inbox or opened email and the Addin creates a new email with the selected ones as attachment with a predefined body based on templates.
+The destinations and subject of this new email will also be set as specified in the settings of this Addin. The user has only to click on "Send" to send it.
+
+For transpaency purposes the email is not sent automatically. This enables the user to add additional comments to it and also shows what will be send to the security team.
+
+
+
+## Addin Button Locations
+The Addin will create icons in the following ribbons in Outlook
 
 * Home
 * NewMail
 * ReadMail
+* Send/Receive
 
 ![Alt text](/images/outlook_inbox_mod.png?raw=true "Ribbon")
 
-The user has only to select an email from and when selecting the button it creates an email with the selected one attached.
-The Fields TO,Body and Subject will be filled automatically. The user sees the newly created email and has to send it manually. This
-is so that one can add comments and guarantee a certain transparency.
 
-The code is adapted to our environment and therefore has set the destination email to soc@govcert.etat.lu and there are several GOVCERT.LU references visible to
-the user.
+# Developpment
+The code is written in Visual Basic
 
-The VSTO is tested with Outlook 2013, 2016 and 2019.
-
-# Requirements
+## Requirements
 Visual Studio 2019 to compile the code
+## Customizations
+ - app.config
+ - Settings in VS
+ - 
+### Templates
+### Settings
+### Resources
 
-
+## Building
 # Compile
 MSBuild should be in the PATH variable of Windows, if not it is located here:
 
@@ -65,8 +105,14 @@ the user has to click on install manually to accept it.
 
 Then the solution has to be published and distributed.
 
-# Publication
+## Publication
 The solution can be complied via Visual Studio's OneClick Solution, and then distributed.
+
+
+#Contribute
+
+Please do contribute! Issues and pull requests are welcome. 
+
 
 # LICENSE
 
