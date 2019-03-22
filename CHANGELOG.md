@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New Logo
 - Header information will be visible in the email
 - New placeholders for templates
+- Sending to CC and BCC possible
 
 ### Changed
 - Addaped Readme to the new environment
