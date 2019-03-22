@@ -1,8 +1,8 @@
 [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-- [GCNotify](#Outlook AddIn: GCNotify)
+- [GCNotify](#Outlook-AddIn-GCNotify)
   - [Functionalities](#Functionalities)
-  - [Addin Button Locations](#Addin Button Locations)
+  - [Addin Button Locations](#Addin-Button-Locations)
 - [Developpment](#Developpment)
   - [Requirements](#Requirements)
   - [Customizations](#Customizations)
