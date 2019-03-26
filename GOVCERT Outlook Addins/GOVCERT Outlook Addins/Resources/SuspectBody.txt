@@ -5,5 +5,9 @@ I want to forward the following emails to be analysed, as I found they look sous
 Attachment(s):
 {{attachments}}
 
+HostDetails
+{{HostDetails}}
+{{NetworkDetails}}
+
 With best regards,
 

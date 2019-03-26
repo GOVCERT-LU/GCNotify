@@ -1,11 +1,3 @@
-The email from: 
-
-{{emailAddress}}
-
-with the subject
-
-{{emailSubject}}
-
-was already detected as SPAM.
+The email from: {{Email}} with the subject {{Subject}} was already detected as SPAM.
 
 Do you realy want to send this email to GOVCERT?

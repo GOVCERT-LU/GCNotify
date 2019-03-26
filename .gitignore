@@ -1,4 +1,5 @@
 *.pfx
+<<<<<<< HEAD
 Govcert Outlook Addins/GovcertOutlookAddins/bin/Debug/*
 Govcert Outlook Addins/GovcertOutlookAddins/obj/Debug/*
 Govcert Outlook Addins/GovcertOutlookAddins/bin/Release/*
@@ -24,3 +25,9 @@ Govcert Outlook Addins/Govcert Outlook Addins Nutshell/Form1.cs
 Govcert Outlook Addins/.vs/*
 
 
+=======
+GOVCERT Outlook Addins/.vs/*
+GOVCERT Outlook Addins/GOVCERT Outlook Addins/bin/*
+GOVCERT Outlook Addins/GOVCERT Outlook Addins/obj/*
+GOVCERT Outlook Addins/GOVCERT Outlook Addins/publish/*
+>>>>>>> v1.5.0

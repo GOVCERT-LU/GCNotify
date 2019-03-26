@@ -17,16 +17,18 @@
 'along with GC-Notify.  If not, see <https://www.gnu.org/licenses/>.'
 '
 
+<System.Runtime.InteropServices.ComVisible(True)>
 Public Class ThisAddIn
 
-    Private Sub ThisAddIn_Startup() Handles Me.Startup
+    Private Sub ThisAddIn_Startup(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Startup
+
         ' Remove Keys for office 2016 '
         RemoveLoadingTimesKeys("16.0")
         ' Remove Keys for office 2013 '
         RemoveLoadingTimesKeys("15.0")
         ' Remove Keys for office 2010 '
         RemoveLoadingTimesKeys("14.0")
-
+        ' Programmatically determine the current Outlook item '
     End Sub
 
     Private Sub RemoveLoadingTimesKeys(outlookVersion As String)

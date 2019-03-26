@@ -3,9 +3,14 @@
     <ribbon>
         <tabs>
             <tab idMso="TabNewMailMessage">
-                <group id="Group1" label="GOVCERT.LU Tools">
-                    <button id="Button1" screentip="Reports the mail to GOVCERT.LU and requests an analysis" label="Report Mail" size="large" image="gcnotify" onAction="SendMail"/>
-                </group>
+              <group id="Group1" getLabel="GetGroupLabel">
+                <button id="BTNNewMailTab"
+                        getLabel="GetButtonLabel"
+                        getSupertip="GetSupertipLabel"
+                        size="large"
+                        getImage="GetImage"
+                        onAction="BTNclick"/>
+              </group>
             </tab>
         </tabs>
     </ribbon>

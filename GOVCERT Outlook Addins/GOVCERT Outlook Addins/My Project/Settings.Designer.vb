@@ -14,12 +14,12 @@ Option Explicit On
 
 
 <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
- Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.0.0.0"),  _
+ Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0"),  _
  Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
 Partial Friend NotInheritable Class MySettings
     Inherits Global.System.Configuration.ApplicationSettingsBase
     
-    Private Shared defaultInstance As MySettings = CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New MySettings()), MySettings)
+    Private Shared defaultInstance As MySettings = CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New MySettings()),MySettings)
     
 #Region "My.Settings Auto-Save Functionality"
 #If _MyType = "WindowsForms" Then
@@ -28,7 +28,7 @@ Partial Friend NotInheritable Class MySettings
     Private Shared addedHandlerLockObject As New Object
 
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
-    Private Shared Sub AutoSaveSettings(ByVal sender As Global.System.Object, ByVal e As Global.System.EventArgs)
+    Private Shared Sub AutoSaveSettings(sender As Global.System.Object, e As Global.System.EventArgs)
         If My.Application.SaveMySettingsOnExit Then
             My.Settings.Save()
         End If
@@ -50,6 +50,115 @@ Partial Friend NotInheritable Class MySettings
                 End If
 #End If
             Return defaultInstance
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("GOVCERT.LU SOC <soc@govcert.etat.lu>")>  _
+    Public ReadOnly Property SOC_MAIL() As String
+        Get
+            Return CType(Me("SOC_MAIL"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+    Public ReadOnly Property SOC_MAIL_CC() As String
+        Get
+            Return CType(Me("SOC_MAIL_CC"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+    Public ReadOnly Property SOC_MAIL_BCC() As String
+        Get
+            Return CType(Me("SOC_MAIL_BCC"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("GOVCERT.LU SUPPORT <support@govcert.etat.lu>")>  _
+    Public ReadOnly Property SUPPORT_MAIL() As String
+        Get
+            Return CType(Me("SUPPORT_MAIL"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("GOVCERT.LU Tools")>  _
+    Public ReadOnly Property GROUP_LABEL() As String
+        Get
+            Return CType(Me("GROUP_LABEL"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("Reports the mail to GOVCERT.LU and requests an analysis")>  _
+    Public ReadOnly Property SUPERTIP_LABEL() As String
+        Get
+            Return CType(Me("SUPERTIP_LABEL"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("Report Mail")>  _
+    Public ReadOnly Property BTN_LABEL() As String
+        Get
+            Return CType(Me("BTN_LABEL"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("Received,Return-Path,X-PMX-Spam,Authentication-Results,Received-SPF,X-Sender,User"& _ 
+        "-Agent,X-Sender,X-Authenticated-Sender,From")>  _
+    Public ReadOnly Property INTERESTING_HEADER_FIELDS() As String
+        Get
+            Return CType(Me("INTERESTING_HEADER_FIELDS"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("etat.lu")>  _
+    Public ReadOnly Property EXCLUDED_HEADER_DOMAIN() As String
+        Get
+            Return CType(Me("EXCLUDED_HEADER_DOMAIN"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("[GC-OBT]")>  _
+    Public ReadOnly Property SOC_MAIL_SUBJECT_TAG() As String
+        Get
+            Return CType(Me("SOC_MAIL_SUBJECT_TAG"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("SOC Request")>  _
+    Public ReadOnly Property SOC_NEW_MAIL_Subject() As String
+        Get
+            Return CType(Me("SOC_NEW_MAIL_Subject"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("SPAM")>  _
+    Public ReadOnly Property SPAM_TAG() As String
+        Get
+            Return CType(Me("SPAM_TAG"),String)
         End Get
     End Property
 End Class

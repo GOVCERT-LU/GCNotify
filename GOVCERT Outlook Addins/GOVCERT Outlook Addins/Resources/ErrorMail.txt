@@ -1,0 +1,16 @@
+An unexpected Error occured in GCNotify!
+
+Please send this email. This will help to improve GCNotify.
+
+
+Details
+-------
+GCNotify - {{Version}}
+
+Message
+-------
+{{Message}}
+
+Stacktrace
+----------
+{{Stacktrace}}

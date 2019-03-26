@@ -1,1 +1,5 @@
 [Please add your inquiry here]
+
+HostDetails
+{{HostDetails}}
+{{NetworkDetails}}
