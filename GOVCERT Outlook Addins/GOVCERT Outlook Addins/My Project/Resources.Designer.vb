@@ -61,7 +61,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to 1.5.0.
+        '''  Looks up a localized string similar to 1.7.0.
         '''</summary>
         Friend ReadOnly Property BTN_VERSIION() As String
             Get
@@ -89,7 +89,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to An unexpected Error occured in GCNotify!
         '''
-        '''Please send this email.
+        '''Please send this email. This will help to improve GCNotify.
+        '''
+        '''
+        '''Details
+        '''-------
+        '''GCNotify - {{Version}}
+        '''
+        '''Message
+        '''-------
+        '''{{Message}}
         '''
         '''Stacktrace
         '''----------

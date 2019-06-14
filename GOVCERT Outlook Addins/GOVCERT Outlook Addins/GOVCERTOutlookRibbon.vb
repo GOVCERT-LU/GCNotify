@@ -151,20 +151,22 @@ Public Class GOVCERTOutlookRibbon
     Private Function PrepareAttachment(ByRef outgoingMail As Outlook.MailItem, ByVal attachmentMail As Outlook.MailItem) As MailDetails
         ' Attaches the mail as attachment to the mail to be sent and returns the information gathered from the mail to attach '
         Dim attachMail As Boolean = True
-        If attachmentMail.Subject.Contains(My.Settings.SPAM_TAG) Then
-            ' This means that the mail was alredy tagged as spam then the user must confirm to send it '
-            'This means that the mail was already tagged as spam then show the dialog for confirmation'
-            Dim message As String = My.Resources.SPAMDialogText
-            TemplateFiller(message, "Email", attachmentMail.SenderEmailAddress)
-            TemplateFiller(message, "Subject", attachmentMail.Subject)
+        If Not (attachmentMail.Subject Is Nothing) Then
+            If attachmentMail.Subject.Contains(My.Settings.SPAM_TAG) Then
+                ' This means that the mail was alredy tagged as spam then the user must confirm to send it '
+                'This means that the mail was already tagged as spam then show the dialog for confirmation'
+                Dim message As String = My.Resources.SPAMDialogText
+                TemplateFiller(message, "Email", attachmentMail.SenderEmailAddress)
+                TemplateFiller(message, "Subject", attachmentMail.Subject)
 
-            Dim result As DialogResult = MessageBox.Show(message, "Email already Tagged", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-            If result = DialogResult.No Then
-                attachMail = False
-            Else
-                ' Set forced header '
-                ' Set X-Headers '
-                outgoingMail.PropertyAccessor.SetProperty(PS_PUBLIC_STRINGS + "/X-GC-Notify-Force-Send", "true")
+                Dim result As DialogResult = MessageBox.Show(message, "Email already Tagged", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                If result = DialogResult.No Then
+                    attachMail = False
+                Else
+                    ' Set forced header '
+                    ' Set X-Headers '
+                    outgoingMail.PropertyAccessor.SetProperty(PS_PUBLIC_STRINGS + "/X-GC-Notify-Force-Send", "true")
+                End If
             End If
         End If
         If attachMail Then
@@ -331,7 +333,6 @@ Public Class GOVCERTOutlookRibbon
 
     Private Sub ProcessWindowMail()
         Try
-            Throw New Exception("balab")
             Dim email As Outlook.MailItem = GetCurrentMail()
             Dim sendMail As Boolean = True
             ' First check if it Is not a new mail '
