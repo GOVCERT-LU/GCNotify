@@ -1,5 +1,3 @@
-[![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
-
 <img src="/images/GOVCERT_RGB_for_outlook.png?raw=true"  width="200" height="200">
 
 # Index
