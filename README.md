@@ -118,8 +118,8 @@ The templates can be found in the resource section of the project or in the **Re
 **Note:** The Icon can also be changed in a similar fashion.
 
 ## Building
-MSBuild should be in the PATH variable of Windows, if not it is located here:
 
+MSBuild should be in the PATH variable of Windows, if not it is located here:
 
 > C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin
 
@@ -137,10 +137,15 @@ Then the compiled OneClick Solution should be now be located in:
 
 It can also be generated via Visual Studio's internal publication functionality
 
-![Alt text](/images/vs_gcnotify_publish.png?raw=true "Visual Studio - Pubish")
+![Alt text](/images/vs_gcnotify_publish.png?raw=true "Visual Studio - Publish")
+
 
 ### Distribution
+The project should be signed; this can be configured in the properties / signing tab. If you want the plugin to outlive your certificate's validity period, you should consider setting up timestamping ("Timestamp server URL" field).
+
 The compiled solution can be distributed via the OneClick Solution or manually.
+
+
 
 # Contribute
 
