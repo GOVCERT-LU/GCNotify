@@ -18,7 +18,7 @@
       <Value Profile="(Default)">GOVCERT.LU Tools</Value>
     </Setting>
     <Setting Name="SUPERTIP_LABEL" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Reports the mail to GOVCERT.LU and requests an analysis</Value>
+      <Value Profile="(Default)">Reports the mail to GOVCERT.LU and requests an analysis!</Value>
     </Setting>
     <Setting Name="BTN_LABEL" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Report Mail</Value>
