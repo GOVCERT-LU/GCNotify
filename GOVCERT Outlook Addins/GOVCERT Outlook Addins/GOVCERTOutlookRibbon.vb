@@ -294,11 +294,15 @@ Public Class GOVCERTOutlookRibbon
             Dim outGoingMail As Outlook.MailItem = CreateNewMail()
             Dim attachments As New List(Of MailDetails)
             Dim temp As MailDetails = Nothing
-            For Each email As Outlook.MailItem In SelectedMails
-                temp = PrepareAttachment(outGoingMail, email)
-                If Not (temp Is Nothing) Then
-                    attachments.Add(temp)
+            For Each item In SelectedMails
+                If TypeOf item Is Outlook.MailItem Then
+                    Dim email As Outlook.MailItem = CType(item, Outlook.MailItem)
+                    temp = PrepareAttachment(outGoingMail, email)
+                    If Not (temp Is Nothing) Then
+                        attachments.Add(temp)
+                    End If
                 End If
+
             Next
             If attachments.Count = 0 Then
                 MessageBox.Show(My.Resources.NoSelectionError, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)

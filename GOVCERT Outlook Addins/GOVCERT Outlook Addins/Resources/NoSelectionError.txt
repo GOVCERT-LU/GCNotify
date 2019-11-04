@@ -1,1 +1,1 @@
-Please Select at least one email to send.
+Please Select at least one email to send. (Make sure no special items were selected.)

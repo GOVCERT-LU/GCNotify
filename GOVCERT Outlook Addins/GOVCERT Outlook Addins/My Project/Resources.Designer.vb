@@ -61,7 +61,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to 1.8.0.3.
+        '''  Looks up a localized string similar to 1.8.0.4.
         '''</summary>
         Friend ReadOnly Property BTN_VERSIION() As String
             Get
