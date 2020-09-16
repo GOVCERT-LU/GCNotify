@@ -11,6 +11,6 @@ Message
 -------
 {{Message}}
 
-Stacktrace
+Exception Details
 ----------
-{{Stacktrace}}
+{{ExceptionDetails}}

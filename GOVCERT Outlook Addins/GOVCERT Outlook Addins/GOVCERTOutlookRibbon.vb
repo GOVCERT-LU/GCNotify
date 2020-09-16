@@ -135,7 +135,6 @@ Public Class GOVCERTOutlookRibbon
                             result += ni.Name + "(" + ip.Address.ToString() + ")" + System.Environment.NewLine
                         End If
                     Next
-
                 End If
             Next
             If result.Length > 0 Then
@@ -170,7 +169,22 @@ Public Class GOVCERTOutlookRibbon
             End If
         End If
         If attachMail Then
-            outgoingMail.Attachments.Add(attachmentMail, Outlook.OlAttachmentType.olByValue)
+            Dim retries As Integer = 5
+            Dim valid As Boolean = False
+
+            While retries > 0 And Not valid
+                retries = retries - 1
+                Try
+                    outgoingMail.Attachments.Add(attachmentMail, Outlook.OlAttachmentType.olByValue)
+                    valid = True
+                Catch ex As Exception
+                    If retries = 0 Then
+                        Throw
+                    Else
+                        Threading.Thread.Sleep(100)
+                    End If
+                End Try
+            End While
             Dim result = New MailDetails()
             result.Subject = attachmentMail.Subject
             result.From = attachmentMail.SenderEmailAddress
@@ -189,8 +203,8 @@ Public Class GOVCERTOutlookRibbon
         email.To = My.Settings.SUPPORT_MAIL
         email.Body = My.Resources.ErrorMail
         TemplateFiller(email.Body, "Message", e.Message)
-        TemplateFiller(email.Body, "Stacktrace", e.StackTrace)
         TemplateFiller(email.Body, "Version", My.Resources.BTN_VERSIION)
+        TemplateFiller(email.Body, "ExceptionDetails", e.ToString())
         email.Display()
 
     End Sub
@@ -403,7 +417,7 @@ Public Class GOVCERTOutlookRibbon
     End Function
 
     Public Function GetSupertipLabel(ByVal control As IRibbonControl) As String
-        Return My.Settings.SUPERTIP_LABEL
+        Return My.Settings.SUPERTIP_LABEL + " (" + My.Resources.BTN_VERSIION + ")"
     End Function
 
     Public Function GetGroupLabel(ByVal control As IRibbonControl) As String

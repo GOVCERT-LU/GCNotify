@@ -61,7 +61,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to 1.8.0.4.
+        '''  Looks up a localized string similar to 1.8.0.5.
         '''</summary>
         Friend ReadOnly Property BTN_VERSIION() As String
             Get
@@ -85,7 +85,7 @@ Namespace My.Resources
                 Return ResourceManager.GetString("EmailDetails", resourceCulture)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized string similar to An unexpected Error occured in GCNotify!
         '''
@@ -100,9 +100,9 @@ Namespace My.Resources
         '''-------
         '''{{Message}}
         '''
-        '''Stacktrace
+        '''Exception Details
         '''----------
-        '''{{Stacktrace}}.
+        '''{{ExceptionDetails}}
         '''</summary>
         Friend ReadOnly Property ErrorMail() As String
             Get
@@ -144,7 +144,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Please Select at least one email to send..
+        '''  Looks up a localized string similar to Please Select at least one email to send. (Make sure no special items were selected.).
         '''</summary>
         Friend ReadOnly Property NoSelectionError() As String
             Get
