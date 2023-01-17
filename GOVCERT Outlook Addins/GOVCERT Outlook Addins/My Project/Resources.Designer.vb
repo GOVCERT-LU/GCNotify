@@ -61,7 +61,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to 1.8.0.7.
+        '''  Looks up a localized string similar to 3.0.6.0.
         '''</summary>
         Friend ReadOnly Property BTN_VERSIION() As String
             Get
@@ -186,7 +186,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to Dear GOVCERT,
         '''
-        '''I want to forward the following emails to be analysed, as I found they look souspicious.
+        '''I want to forward the following emails to be analysed, as I found they look suspicious.
         '''
         '''Attachment(s):
         '''{{attachments}}
