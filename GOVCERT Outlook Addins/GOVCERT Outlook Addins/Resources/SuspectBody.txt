@@ -1,6 +1,6 @@
 Dear GOVCERT,
 
-I want to forward the following emails to be analysed, as I found they look souspicious.
+I want to forward the following emails to be analysed, as I found they look suspicious.
 
 Attachment(s):
 {{attachments}}
